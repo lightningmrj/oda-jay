@@ -8,6 +8,12 @@ import numpy as np
 
 app = MultiApp()
 
+st.set_page_config(page_title='Olympics Data Analysis',
+    layout='wide')
+
+#---------------------------------#
+
+
 df = pd.read_csv('athlete_events.csv')
 region_df = pd.read_csv('noc_regions.csv')
 

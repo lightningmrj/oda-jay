@@ -19,7 +19,7 @@ df = pd.concat([df, pd.get_dummies(df['Medal'])], axis=1)
 def app():
     st.sidebar.header('Medal Tally')
     years, country = helper.country_year_list(df)
-    st.sidebar.info('This department will give you the information of the Medals Countries achieved over the years')
+    st.sidebar.info('This department will give you the information of the Medals, Countries have achieved over the years')
     st.sidebar.info('Select Your Year')
     selected_year = st.sidebar.selectbox('Select Year', years)
     st.sidebar.info('Select Your Country')
